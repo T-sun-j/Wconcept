@@ -1,0 +1,328 @@
+@charset "utf-8";
+/* 全局 */
+* { padding: 0; margin: 0;  }
+body { background-color: #fff; font-family: PingFangSC , sans-serif; font-size: 14px; }
+a, a:link, a:visited { color: #2d2d2d; text-decoration: none; }
+em { font-style: normal; }
+ul, li { list-style: none; }
+img { border: none; outline: none; overflow: hidden; }
+p { word-break: break-all !important; }
+.left { float: left; }
+.right { float: right; }
+.active{display:block}
+
+
+
+/*                  breadcrumbs                     */
+
+.page_block {
+    width: 1100px;
+    margin: 0 auto;
+}
+.breadcrumbs {
+    height: 36px;
+    line-height: 36px;  
+}
+.breadcrumbs li {
+    float: left;
+    font-size: 12px;
+    color: #9e9e9e;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 560px;
+}
+.breadcrumbs li a {
+    font-size: 12px;
+    color: #9e9e9e;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 150px;
+}
+.breadcrumbs li span {
+    padding: 0 12px;
+}
+
+
+
+/*              product_content                      */
+.product_content{
+    width:1500px;
+    height:800px;
+    margin:0 auto;
+    margin-bottom: 30px;
+}
+
+/*                  content放大镜                    */
+
+
+
+
+
+#content{
+    position: relative;
+    margin-left: 60px;
+    float: left;
+}
+.minImg {
+    margin: 0 10px;
+    border: 1px solid #fff;
+}
+#content>.minImg:hover>img {
+    border-color: #000;
+}
+#box{
+    width: 400px;
+    height: 600px;
+    border: 1px solid #000;
+}
+.max{
+    position: absolute;
+    left: 430px;
+    top: 0;
+    width: 400px;
+    height: 400px;
+    display: none;
+    overflow: hidden;
+}
+.max>img{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.minImg>.min{
+    margin-right: 10px;
+    width:100px;
+    height:100px;
+}
+#filter{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: #000;
+    opacity: 0.6;
+    display: none;
+}
+
+
+
+
+
+
+
+/*                       productOption              */
+
+
+
+.productOption{
+    width: 600px;
+    height: 600px;
+    float: left;
+    margin-left:60px;
+}
+.productOption .productDescrip {
+    border-bottom: 1px solid #d9d9d9;
+}
+.productOption.productDescrip{
+    width:100%;
+    height:95px;
+}
+.productOption .productDescrip p:first-child {
+    font-weight: bold;
+    color: #2d2d2d;
+}
+.productOption .productDescrip p:first-child + p + p {
+    font-size: 12px;
+    color: #9e9e9e;
+    height: 14px;
+    line-height: 14px;
+    margin: 5px 0 15px;
+}
+.productOption .productDescrip p {
+    line-height: 30px;
+    font-size: 22px;
+    color: #626161;
+    
+}
+.productOption .productPrice{
+    color: #9e9e9e;
+    line-height: 20px;
+    padding: 7px 0;
+}
+
+.productOption .productPrice .storePrice {
+    margin-bottom: 5px;
+    color: #626161;
+    width:600px;
+    height:40px;
+}
+.productOption em {
+    display: inline-block;
+    width: 70px;
+    text-align: left;
+}
+.mt12 {
+    margin-top: 12px;
+}
+.productOption .productPrice .salePrice {
+    display: inline-block;
+    color: #626161;
+    font-size: 28px;
+    line-height: 40px;
+    vertical-align: -3px;
+   
+}
+.productOption .productPrice .discountNum {
+    display: inline-block;
+    width: 45px;
+    height: 19px;
+    line-height: 20px;
+    margin: 8px 0 0 20px;
+    background: rgb(245, 24, 24);
+    background-size: 100%;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/skin/frontend/wcc_pc/default/images/pc/discount_bg.png', sizingMethod='scale');
+    font-size: 12px;
+    color: #fff;
+    text-indent: 13px;
+    font-style: normal;
+}
+.productOption .productPrice .originPrice {
+    text-decoration: line-through;
+    margin: 12px 0 0 20px;
+    display: none;
+}
+.choose{
+    width:600px;
+    height: 174px;
+    line-height: 24px;
+    margin-right: 3px;
+}
+.choose>div{
+    width:600px;
+    height:44px;
+    line-height: 44px;  
+}
+.choose>.choose_color> button{
+    height: 24px;
+    margin: 0 15px 10px 0;
+    padding: 0 15px;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #9e9e9e;
+    background-color: #626161;
+    color: #fff;
+    margin-left: 20px;
+}
+.choose>.choose_size> button{
+    height: 24px;
+    margin: 0 15px 10px 0;
+    padding: 0 15px;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #9e9e9e;
+    background-color: #626161;
+    color: #fff;
+    margin-left: 20px;
+}
+.choose>.choose_number> button{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #9e9e9e;
+    background-color: #ebe9e9;
+    color: rgb(14, 13, 13);
+}
+.choose>.choose_number>input{
+    width:40px;
+    height:20px;
+}
+.choose>.choose_number>#chooseReduce{
+    margin-left: 20px;
+}
+
+.product_addtocart{
+    width:600px;
+    height:120px;
+    text-align: center;
+}
+.productPrice .product_addtocart>ul>li{
+    width:160px;
+    height:50px;
+    float: left;
+    text-align: center;
+}
+.productPrice .product_addtocart>ul>li>button{
+    width:160px;
+    height:50px;
+    background:rgb(241, 87, 87);
+    color:#fff;
+    font-size:16px;
+}
+.productPrice .product_addtocart>ul>.collect{
+    width:130px;
+    height:47px;    
+    text-align: center;
+    line-height: 47px;
+    margin-left: 20px;
+    border:1px solid #afacac;    
+}
+.productPrice .product_addtocart>ul>.collect>a{
+    font-size:16px;
+    color:#9e9e9e;
+}
+.productPrice .product_addtocart>ul>.service{
+    width:100px;
+    height:47px;    
+    text-align: center;
+    line-height: 47px;
+    margin-left: 20px;  
+}
+.productPrice .product_addtocart>ul>.service>a{
+    font-size:12px;
+    color:#9e9e9e;
+}
+.productOption .productPrice .detail-info {
+    border: 1px solid #d9d9d9;
+    padding: 16px 22px;
+}
+.productOption .productPrice .detail-info > p {
+    border-bottom: 1px dashed #d9d9d9;
+    padding-bottom: 18px;
+}
+.productOption .deliveryWay, .productOption .taxes {
+    color: #626161;
+}
+.productOption .deliveryWay,.productOption .returnPolicy {
+    margin-bottom: 18px;
+}
+.productOption .returnPolicy em {
+    display: inline-block;
+    width: 70px;
+    text-align: left;
+    color: #9e9e9e;
+    vertical-align: top;
+}
+.productOption .returnPolicy > span {
+    display: inline-block;
+    width: 407px;
+    line-height: 25px;
+}
+.productOption .returnPolicy > span span {
+    display: inline-block;
+    width: 130px;
+    color: #626161;
+}
+.productOption .returnPolicy a {
+    float: right;
+    color: #9e9e9e;
+    text-decoration: underline;
+}
+.shipping-region span{
+    margin-left:20px;
+}
+
+
+
+
